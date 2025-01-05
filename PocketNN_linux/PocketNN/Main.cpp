@@ -26,6 +26,21 @@ int main() {
     //     ./dataset/fashion_mnist/t10k-images-idx3-ubyte
     // (Please download the files from the link.)
 
+    std::cout << "Starting experiment: Fully Connected MNIST Integer DFA" << std::endl;
     example_fc_int_dfa_mnist();
+    std::cout << "Finished experiment: Fully Connected MNIST Integer DFA" << std::endl;
+    
+    std::cout << "-----------------------------------------------" << std::endl;
+
+    std::cout << "Starting experiment: Fully Connected Fashion-MNIST Integer DFA" << std::endl;
+    example_fc_int_dfa_fashion_mnist();
+    std::cout << "Finished experiment: Fully Connected Fashion-MNIST Integer DFA" << std::endl;
+
+    std::cout << "-----------------------------------------------" << std::endl;
+
+    std::cout << "Starting experiment: Very Simple Integer BP" << std::endl;
+    example_fc_int_bp_very_simple();
+    std::cout << "Finished experiment: Very Simple Integer BP" << std::endl;
+
     return 0;
 }
